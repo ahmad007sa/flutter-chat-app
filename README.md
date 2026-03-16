@@ -6,80 +6,71 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 A modern **real-time chat application** built using **Flutter** and **Firebase**.
-This project demonstrates how to build scalable mobile applications with authentication, cloud storage, push notifications, and real-time messaging.
+The app demonstrates how to build scalable mobile apps with authentication, cloud storage, push notifications, and real-time messaging.
 
 ---
 
 # 🚀 Features
 
-✨ Key features of the application:
-
 * 🔐 **User Authentication**
 
   * Sign up and login using Firebase Authentication
-  * Email & password validation
+  * Email and password validation
 
 * 👤 **User Profiles**
 
-  * Upload profile images during registration
+  * Upload profile image during registration
   * Images stored in Firebase Storage
 
 * 💬 **Real-Time Chat**
 
   * Messages stored in Cloud Firestore
-  * Live updates using Firestore streams
+  * Real-time updates using Firestore streams
 
 * 🧑‍🤝‍🧑 **User Identification**
 
-  * Messages display username and profile image
+  * Each message shows the sender's username and profile image
 
 * 📱 **Push Notifications**
 
-  * Firebase Cloud Messaging support
+  * Firebase Cloud Messaging integration
 
 * 🎨 **Modern Chat UI**
 
   * Chat bubbles
   * Avatar display
-  * Clean and simple interface
+  * Clean and responsive design
 
 ---
 
 # 📱 Screenshots
 
-### Signup Screen
+<p align="center">
+  <img src="screenshots/signup_screen.png" width="220"/>
+  <img src="screenshots/login_screen.png" width="220"/>
+  <img src="screenshots/signup_validation.png" width="220"/>
+</p>
 
-![Signup](screenshots/signup_screen.png)
-
-### Login Screen
-
-![Login](screenshots/login_screen.png)
-
-### Chat Screen
-
-![Chat](screenshots/chat_screen.png)
-
-### Form Validation
-
-![Validation](screenshots/signup_validation.png)
+<p align="center">
+  <img src="screenshots/login_validation.png" width="220"/>
+  <img src="screenshots/chat_screen.png" width="220"/>
+</p>
 
 ---
 
 # 🏗 Architecture
 
-The application architecture is based on Flutter UI connected with Firebase services:
-
-```
+```text
 Flutter UI
     │
     ▼
 Firebase Authentication
     │
     ▼
-Cloud Firestore (Real-time chat)
+Cloud Firestore (Real-time messages)
     │
     ▼
-Firebase Storage (Profile images)
+Firebase Storage (User images)
     │
     ▼
 Firebase Cloud Messaging
@@ -93,9 +84,9 @@ Firebase Cloud Messaging
 | ----------------------- | --------------------------- |
 | Flutter                 | Cross-platform UI framework |
 | Dart                    | Programming language        |
-| Firebase Authentication | User login/signup           |
+| Firebase Authentication | User authentication         |
 | Cloud Firestore         | Real-time database          |
-| Firebase Storage        | Profile image storage       |
+| Firebase Storage        | Profile images storage      |
 | Firebase Messaging      | Push notifications          |
 
 ---
@@ -121,7 +112,7 @@ image_picker
 git clone https://github.com/ahmad007sa/flutter-chat-app.git
 ```
 
-### 2️⃣ Navigate into the project
+### 2️⃣ Navigate to the project
 
 ```
 cd flutter-chat-app
@@ -141,9 +132,7 @@ Add your Firebase configuration file:
 android/app/google-services.json
 ```
 
----
-
-### 5️⃣ Run the application
+### 5️⃣ Run the app
 
 ```
 flutter run
@@ -153,51 +142,21 @@ flutter run
 
 # 📊 Application Flow
 
-1️⃣ User creates an account
-2️⃣ Profile image uploaded to Firebase Storage
-3️⃣ User information stored in Firestore
-4️⃣ Messages stored in Firestore
-5️⃣ Messages streamed instantly to all users
+1. User creates an account
+2. Profile image uploaded to Firebase Storage
+3. User data stored in Firestore
+4. Messages stored in Firestore
+5. Messages appear instantly for all users
 
 ---
 
 # 🎯 What I Learned
 
-Through this project I learned:
-
-* Building **real-time applications using Flutter**
+* Building **real-time chat apps with Flutter**
 * Integrating **Firebase Authentication**
 * Using **Cloud Firestore streams**
-* Uploading images with **Firebase Storage**
+* Uploading images using **Firebase Storage**
 * Implementing **push notifications**
-* Structuring scalable Flutter projects
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a new branch
-
-```
-git checkout -b feature-name
-```
-
-3. Commit your changes
-
-```
-git commit -m "Add feature"
-```
-
-4. Push the branch
-
-```
-git push origin feature-name
-```
-
-5. Open a Pull Request
 
 ---
 
@@ -209,7 +168,7 @@ Developed by **Ahmad** as a Flutter learning project.
 
 # ⭐ Support
 
-If you like this project, consider giving it a **⭐ on GitHub**.
+If you like this project, consider giving it a ⭐ on GitHub.
 
 ---
 
