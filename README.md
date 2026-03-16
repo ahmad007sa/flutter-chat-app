@@ -49,27 +49,6 @@ A **modern real-time chat application** built with **Flutter** and **Firebase** 
 
 ---
 
-# 📱 Screenshots
-
-*(Add screenshots of your app here)*
-
-Example:
-
-```
-screenshots/
- ├── login.png
- ├── signup.png
- ├── chat.png
-```
-
-Then add them like this:
-
-```
-![Login Screen](screenshots/login.png)
-![Chat Screen](screenshots/chat.png)
-```
-
----
 
 # 🏗 Architecture
 
