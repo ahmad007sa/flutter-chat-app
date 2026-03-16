@@ -1,12 +1,6 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.buildlog/
-.history/
-
-# Flutter/Dart/Pub
+# ===============================
+# Flutter / Dart
+# ===============================
 .dart_tool/
 .packages
 .flutter-plugins
@@ -14,19 +8,47 @@
 .pub/
 build/
 
-# Android Studio
+# ===============================
+# IDE files
+# ===============================
 .idea/
 *.iml
-android/local.properties
-
-# VS Code
 .vscode/
 
-# Firebase (important)
+# ===============================
+# Android
+# ===============================
+android/local.properties
+android/.gradle/
 android/app/google-services.json
+
+# ===============================
+# iOS
+# ===============================
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
 ios/Runner/GoogleService-Info.plist
 
-# Generated
+# ===============================
+# Generated files
+# ===============================
 **/doc/api/
 app.*.symbols
-android/app/google-services.json
+
+# ===============================
+# System files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Logs
+# ===============================
+*.log
+*.class
+*.pyc
+*.swp
+.buildlog/
+.history/
