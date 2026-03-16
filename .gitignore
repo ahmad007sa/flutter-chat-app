@@ -4,14 +4,28 @@
 *.pyc
 *.swp
 .buildlog/
-.history
+.history/
 
-
-
-# Flutter/Dart/Pub related
-**/doc/api/
+# Flutter/Dart/Pub
 .dart_tool/
+.packages
+.flutter-plugins
 .flutter-plugins-dependencies
 .pub/
+build/
 
+# Android Studio
+.idea/
+*.iml
+android/local.properties
+
+# VS Code
+.vscode/
+
+# Firebase (important)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# Generated
+**/doc/api/
 app.*.symbols
