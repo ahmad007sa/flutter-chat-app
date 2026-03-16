@@ -29,3 +29,4 @@ ios/Runner/GoogleService-Info.plist
 # Generated
 **/doc/api/
 app.*.symbols
+android/app/google-services.json
