@@ -5,54 +5,69 @@
 ![Dart](https://img.shields.io/badge/Dart-Language-blue?logo=dart)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-A **modern real-time chat application** built with **Flutter** and **Firebase** that demonstrates how to build scalable mobile apps with authentication, cloud storage, push notifications, and real-time messaging.
+A modern **real-time chat application** built using **Flutter** and **Firebase**.
+This project demonstrates how to build scalable mobile applications with authentication, cloud storage, push notifications, and real-time messaging.
 
 ---
 
 # 🚀 Features
 
-✨ Core functionality of the application:
+✨ Key features of the application:
 
 * 🔐 **User Authentication**
 
-    * Sign up & login using Firebase Authentication
-    * Secure email/password authentication
+  * Sign up and login using Firebase Authentication
+  * Email & password validation
 
 * 👤 **User Profiles**
 
-    * Upload profile images during registration
-    * Images stored using Firebase Storage
+  * Upload profile images during registration
+  * Images stored in Firebase Storage
 
-* 💬 **Real-Time Messaging**
+* 💬 **Real-Time Chat**
 
-    * Messages stored in Cloud Firestore
-    * Instant updates using Firestore streams
+  * Messages stored in Cloud Firestore
+  * Live updates using Firestore streams
 
 * 🧑‍🤝‍🧑 **User Identification**
 
-    * Each message displays username and profile image
+  * Messages display username and profile image
 
 * 📱 **Push Notifications**
 
-    * Firebase Cloud Messaging integration
-    * Users automatically subscribe to chat topic
-
-* ⚡ **Live Updates**
-
-    * Real-time UI updates with StreamBuilder
+  * Firebase Cloud Messaging support
 
 * 🎨 **Modern Chat UI**
 
-    * Chat bubbles
-    * Avatar support
-    * Grouped messages
+  * Chat bubbles
+  * Avatar display
+  * Clean and simple interface
 
 ---
 
+# 📱 Screenshots
+
+### Signup Screen
+
+![Signup](screenshots/signup_screen.png)
+
+### Login Screen
+
+![Login](screenshots/login_screen.png)
+
+### Chat Screen
+
+![Chat](screenshots/chat_screen.png)
+
+### Form Validation
+
+![Validation](screenshots/signup_validation.png)
+
+---
 
 # 🏗 Architecture
 
-The app follows a simple and scalable architecture:
+The application architecture is based on Flutter UI connected with Firebase services:
 
 ```
 Flutter UI
@@ -61,47 +76,27 @@ Flutter UI
 Firebase Authentication
     │
     ▼
-Cloud Firestore (Real-time messages)
+Cloud Firestore (Real-time chat)
     │
     ▼
-Firebase Storage (User images)
+Firebase Storage (Profile images)
     │
     ▼
-Firebase Cloud Messaging (Notifications)
-```
-
----
-
-# 📂 Project Structure
-
-```
-lib/
- ├── screens/
- │   ├── auth.dart
- │   ├── chat.dart
- │   └── splash.dart
- │
- ├── widgets/
- │   ├── chat_messages.dart
- │   ├── message_bubble.dart
- │   ├── new_message.dart
- │   └── user_image_picker.dart
- │
- └── main.dart
+Firebase Cloud Messaging
 ```
 
 ---
 
 # 🛠 Tech Stack
 
-| Technology         | Purpose                     |
-| ------------------ | --------------------------- |
-| Flutter            | Cross-platform UI framework |
-| Dart               | Programming language        |
-| Firebase Auth      | User authentication         |
-| Cloud Firestore    | Real-time database          |
-| Firebase Storage   | Image storage               |
-| Firebase Messaging | Push notifications          |
+| Technology              | Usage                       |
+| ----------------------- | --------------------------- |
+| Flutter                 | Cross-platform UI framework |
+| Dart                    | Programming language        |
+| Firebase Authentication | User login/signup           |
+| Cloud Firestore         | Real-time database          |
+| Firebase Storage        | Profile image storage       |
+| Firebase Messaging      | Push notifications          |
 
 ---
 
@@ -140,7 +135,7 @@ flutter pub get
 
 ### 4️⃣ Configure Firebase
 
-Add the Firebase configuration file:
+Add your Firebase configuration file:
 
 ```
 android/app/google-services.json
@@ -148,7 +143,7 @@ android/app/google-services.json
 
 ---
 
-### 5️⃣ Run the app
+### 5️⃣ Run the application
 
 ```
 flutter run
@@ -160,29 +155,28 @@ flutter run
 
 1️⃣ User creates an account
 2️⃣ Profile image uploaded to Firebase Storage
-3️⃣ User data stored in Firestore
+3️⃣ User information stored in Firestore
 4️⃣ Messages stored in Firestore
-5️⃣ Messages streamed to all connected users
+5️⃣ Messages streamed instantly to all users
 
 ---
 
-# 🎯 Learning Goals
+# 🎯 What I Learned
 
-This project demonstrates how to:
+Through this project I learned:
 
-* Build **real-time chat applications**
-* Use **Firebase with Flutter**
-* Implement **authentication flows**
-* Handle **image uploads**
-* Build **reactive UI using streams**
+* Building **real-time applications using Flutter**
+* Integrating **Firebase Authentication**
+* Using **Cloud Firestore streams**
+* Uploading images with **Firebase Storage**
+* Implementing **push notifications**
+* Structuring scalable Flutter projects
 
 ---
 
 # 🤝 Contributing
 
 Contributions are welcome!
-
-If you'd like to improve the project:
 
 1. Fork the repository
 2. Create a new branch
@@ -197,7 +191,7 @@ git checkout -b feature-name
 git commit -m "Add feature"
 ```
 
-4. Push to the branch
+4. Push the branch
 
 ```
 git push origin feature-name
@@ -215,7 +209,7 @@ Developed by **Ahmad** as a Flutter learning project.
 
 # ⭐ Support
 
-If you like this project, please consider giving it a ⭐ on GitHub!
+If you like this project, consider giving it a **⭐ on GitHub**.
 
 ---
 
